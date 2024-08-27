@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="submit.html"> <!--if autocomplte is on,it suggests details-->
+        <label for="emailid">Email id:</label>
+        <input type="email" placeholder="Enter your email" id="emailid" required><br
+
+        <label for="pswd">Password:</label>
+        <input type="password" value="sahas123" placeholder="Enter yor number" id="pswd" required><br>
+
+        <label for="age1">Age:</label>
+        <input type="number" min="0" max="100" id="age1" placeholder="Enter your age" required><br>
+
+        <label for="d">Date of Birth:</label>
+        <input type="date"><br><!--date doesnt have placeholder-->
+
+        <label for="resume">Resume File</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.ppt"><br>
+        <!--accept attribute is used so that only particular types of files can be uploaded-->
+
+        <input type="checkbox">
+        <span>Terms & Conditions</span><br>
+        <input type="checkbox">
+        <span>Only A</span><br>
+        <input type="checkbox">
+        <span>Only B</span><br>
+        <input type="checkbox">
+        <span>Both A & B</span><br>
+
+        <input type="radio"><span>male</span>
+        <input type="radio"><span>female</span>
+        <input type="radio"><span>others</span><br>
+
+        <label for="name">user name:</label>
+        <input type="text" id="name" maxlength=""><br>
+
+        <select>
+            <optgroup label="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Australia</option>
+                <option>Sudan</option>
+                <option>Canada</option>
+            </optgroup>
+
+            <!--optgroup is used to selct a option and then one of the options of the previous selected option but has to use javascript for this-->
+
+            <optgroup label="state">
+                <option>TS</option>
+                <option>AP</option>
+                <option>TN</option>
+                <option>HP</option>
+                <option>JK</option>
+            </optgroup>
+        </select><br>
+
+        <input list="countries" type="text"> <!--list attribute is used to refet the particukar datlist-->
+        <datalist id="countries">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Australia</option>
+            <option>Sudan</option>
+            <option>Canada</option>
+        </datalist><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
